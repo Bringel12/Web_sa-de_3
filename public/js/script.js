@@ -127,7 +127,8 @@ formulario.addEventListener("submit", async (event) => {
             dados.usuario
         );
 
-        alert("Login realizado com sucesso!");
+        // alert("Login realizado com sucesso!");
+        window.location.href = "modelo/principal.html";
 
 
     } catch (error) {
