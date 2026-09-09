@@ -1,12 +1,310 @@
 <!DOCTYPE html>
-<html lang="Br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saúde</title>
+
+    <title>SaúdeConecta - Login</title>
+
+    <link rel="stylesheet" href="./css/index.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 </head>
+
 <body>
-    <h1>Saúde</h1>
-    <p>teste</p>
+
+    <main class="login-page">
+
+
+
+        <section class="login-left">
+
+            <div class="login-container">
+
+                <!-- LOGO -->
+
+                <div class="logo-login">
+
+                    <div class="logo-icon">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+
+                    <span>
+                        Saúde<span>Conecta</span>
+                    </span>
+
+                </div>
+
+
+
+                <div class="login-title">
+
+                    <h1>
+                        Bem-vindo de volta!
+                    </h1>
+
+                    <p>
+                        Entre na sua conta para continuar
+                        utilizando o SaúdeConecta.
+                    </p>
+
+                </div>
+
+
+                <!-- FORMULÁRIO -->
+
+                <form class="login-form">
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            E-mail
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Digite seu e-mail"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <div class="password-label">
+
+                            <label for="password">
+                                Senha
+                            </label>
+
+                            <a href="#">
+                                Esqueci minha senha
+                            </a>
+
+                        </div>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Digite sua senha"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="show-password"
+                                onclick="mostrarSenha()"
+                            >
+                                <i
+                                    id="eye-icon"
+                                    class="fa-regular fa-eye"
+                                ></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- LEMBRAR -->
+
+                    <div class="remember">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="remember"
+                            >
+
+                            <span>
+                                Lembrar de mim
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+
+
+                    <button
+                        type="submit"
+                        class="btn-login"
+                    >
+
+                        Entrar
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+
+
+                <div class="create-account">
+
+                    <span>
+                        Ainda não possui uma conta?
+                    </span>
+
+                    <a href="#">
+                        Criar uma conta
+                    </a>
+
+                </div>
+
+
+
+
+                <div class="login-footer">
+
+                    <span>
+                        © 2026 SaúdeConecta
+                    </span>
+
+                    <div>
+
+                        <a href="#">
+                            Termos de uso
+                        </a>
+
+                        <a href="#">
+                            Privacidade
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="login-right">
+
+            <div class="right-content">
+
+                <!-- ÍCONE -->
+
+                <div class="health-icon">
+
+                    <i class="fa-solid fa-heart-pulse"></i>
+
+                </div>
+
+
+                <h2>
+                    Conectando você
+                    <br>
+                    ao cuidado certo.
+                </h2>
+
+
+                <p>
+                    Encontre profissionais de saúde,
+                    agende atendimentos e cuide da
+                    sua saúde de forma simples e segura.
+                </p>
+
+
+                <!-- BENEFÍCIOS -->
+
+                <div class="benefits">
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-user-doctor"></i>
+                        </div>
+
+                        <div>
+                            <strong>
+                                Profissionais qualificados
+                            </strong>
+
+                            <span>
+                                Encontre especialistas para suas necessidades.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+
+                        <div>
+                            <strong>
+                                Agendamento fácil
+                            </strong>
+
+                            <span>
+                                Agende suas consultas de forma rápida.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="benefit">
+
+                        <div class="benefit-icon">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+
+                        <div>
+                            <strong>
+                                Segurança
+                            </strong>
+
+                            <span>
+                                Seus dados protegidos e seguros.
+                            </span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <script src="./js/script.js"></script>
+
 </body>
+
 </html>

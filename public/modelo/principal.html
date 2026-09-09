@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SaúdeConecta - Dashboard</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/dashboard.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- ================= SIDEBAR ================= -->
+
+        <aside class="sidebar">
+
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-heart-pulse"></i>
+                </div>
+
+                <span>Saúde<span>Conecta</span></span>
+            </div>
+
+            <nav class="menu">
+
+                <a href="#" class="menu-item active">
+                    <i class="fa-solid fa-table-columns"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-user-doctor"></i>
+                    <span>Profissionais</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-users"></i>
+                    <span>Pacientes</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-regular fa-calendar"></i>
+                    <span>Agenda</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span>Atendimentos</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Financeiro</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Planos</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                    <span>Assinaturas</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <span>Pagamentos</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Relatórios</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <span>Denúncias</span>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Configurações</span>
+                </a>
+
+                <a href="#" class="menu-item logout">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Sair</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="main-content">
+
+            <!-- HEADER -->
+
+            <header class="topbar">
+
+                <div class="mobile-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="topbar-actions">
+
+                    <button class="icon-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+
+                    <button class="icon-button notification">
+                        <i class="fa-regular fa-bell"></i>
+                        <span></span>
+                    </button>
+
+                    <button class="icon-button notification">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span></span>
+                    </button>
+
+                    <div class="admin-profile">
+
+                        <div class="avatar">
+                            A
+                        </div>
+
+                        <div class="admin-info">
+                            <strong>Admin</strong>
+                            <small>Administrador</small>
+                        </div>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+            </header>
+
+            <!-- ================= CONTENT ================= -->
+
+            <section class="content">
+
+                <!-- TITLE -->
+
+                <div class="page-header">
+
+                    <div>
+                        <h1>Dashboard</h1>
+
+                        <h2>
+                            Olá, Administrador! 👋
+                        </h2>
+
+                        <p>
+                            Bem-vindo de volta à sua plataforma.
+                        </p>
+                    </div>
+
+                    <div class="date-filter">
+
+                        <i class="fa-regular fa-calendar"></i>
+
+                        <span>22/06/2024 - 22/06/2024</span>
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </div>
+
+                </div>
+
+                <!-- ================= CARDS ================= -->
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Profissionais ativos</span>
+
+                            <div class="stat-icon blue">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                        </div>
+
+                        <h3>1.248</h3>
+
+                        <div class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            18%
+                            <span>este mês</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Pacientes ativos</span>
+
+                            <div class="stat-icon green">
+                                <i class="fa-solid fa-user-group"></i>
+                            </div>
+                        </div>
+
+                        <h3>3.562</h3>
+
+                        <div class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            21%
+                            <span>este mês</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Atendimentos (mês)</span>
+
+                            <div class="stat-icon orange">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                        </div>
+
+                        <h3>5.862</h3>
+
+                        <div class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            12%
+                            <span>este mês</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <div class="stat-top">
+                            <span>Receita (mês)</span>
+
+                            <div class="stat-icon purple">
+                                <i class="fa-solid fa-wallet"></i>
+                            </div>
+                        </div>
+
+                        <h3>R$ 46.850,00</h3>
+
+                        <div class="stat-growth positive">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            28%
+                            <span>este mês</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= DASHBOARD GRID ================= -->
+
+                <div class="dashboard-grid">
+
+                    <!-- ATENDIMENTOS -->
+
+                    <section class="card appointments-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <h3>Atendimentos recentes</h3>
+                                <p>Últimos atendimentos realizados</p>
+                            </div>
+
+                            <button class="view-all">
+                                Ver todos
+                            </button>
+
+                        </div>
+
+                        <div class="appointments-list">
+
+                            <div class="appointment">
+
+                                <div class="person-avatar">
+                                    AB
+                                </div>
+
+                                <div class="person-info">
+                                    <strong>Ana Beatriz Silva</strong>
+                                    <span>Psicóloga</span>
+                                </div>
+
+                                <div class="appointment-type">
+                                    Consulta online
+                                </div>
+
+                                <div class="appointment-date">
+                                    22/06/2024 09:00
+                                </div>
+
+                                <span class="status confirmed">
+                                    Confirmado
+                                </span>
+
+                            </div>
+
+
+                            <div class="appointment">
+
+                                <div class="person-avatar avatar-orange">
+                                    LO
+                                </div>
+
+                                <div class="person-info">
+                                    <strong>Lucas Oliveira</strong>
+                                    <span>Nutricionista</span>
+                                </div>
+
+                                <div class="appointment-type">
+                                    Consulta presencial
+                                </div>
+
+                                <div class="appointment-date">
+                                    22/06/2024 10:30
+                                </div>
+
+                                <span class="status confirmed">
+                                    Confirmado
+                                </span>
+
+                            </div>
+
+
+                            <div class="appointment">
+
+                                <div class="person-avatar avatar-purple">
+                                    JS
+                                </div>
+
+                                <div class="person-info">
+                                    <strong>Juliana Santos</strong>
+                                    <span>Fisioterapeuta</span>
+                                </div>
+
+                                <div class="appointment-type">
+                                    Consulta online
+                                </div>
+
+                                <div class="appointment-date">
+                                    22/06/2024 14:00
+                                </div>
+
+                                <span class="status pending">
+                                    Pendente
+                                </span>
+
+                            </div>
+
+
+                            <div class="appointment">
+
+                                <div class="person-avatar avatar-green">
+                                    RC
+                                </div>
+
+                                <div class="person-info">
+                                    <strong>Rafael Costa</strong>
+                                    <span>Psicólogo</span>
+                                </div>
+
+                                <div class="appointment-type">
+                                    Consulta presencial
+                                </div>
+
+                                <div class="appointment-date">
+                                    22/06/2024 15:30
+                                </div>
+
+                                <span class="status confirmed">
+                                    Confirmado
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <button class="bottom-link">
+                            Ver todos
+                        </button>
+
+                    </section>
+
+
+                    <!-- RECEITA -->
+
+                    <section class="card revenue-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <h3>Receita mensal</h3>
+                                <p>Desempenho financeiro</p>
+                            </div>
+
+                        </div>
+
+                        <div class="revenue-value">
+                            R$ 46.850,00
+                        </div>
+
+                        <div class="revenue-growth">
+                            <i class="fa-solid fa-arrow-up"></i>
+                            28%
+                            <span>em relação ao mês anterior</span>
+                        </div>
+
+                        <div class="chart-container">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+
+                    </section>
+
+
+                    <!-- ESPECIALIDADES -->
+
+                    <section class="card specialties-card">
+
+                        <div class="card-header">
+
+                            <div>
+                                <h3>Profissionais por especialidade</h3>
+                                <p>Distribuição atual</p>
+                            </div>
+
+                        </div>
+
+                        <div class="specialties-content">
+
+                            <div class="donut-container">
+                                <canvas id="specialtyChart"></canvas>
+                            </div>
+
+                            <div class="legend">
+
+                                <div class="legend-item">
+                                    <span class="legend-color color-1"></span>
+                                    <span>Psicologia</span>
+                                    <strong>482</strong>
+                                </div>
+
+                                <div class="legend-item">
+                                    <span class="legend-color color-2"></span>
+                                    <span>Nutrição</span>
+                                    <strong>236</strong>
+                                </div>
+
+                                <div class="legend-item">
+                                    <span class="legend-color color-3"></span>
+                                    <span>Fisioterapia</span>
+                                    <strong>168</strong>
+                                </div>
+
+                                <div class="legend-item">
+                                    <span class="legend-color color-4"></span>
+                                    <span>Fonoaudiologia</span>
+                                    <strong>98</strong>
+                                </div>
+
+                                <div class="legend-item">
+                                    <span class="legend-color color-5"></span>
+                                    <span>Outros</span>
+                                    <strong>75</strong>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./js/dashboard.js"></script>
+
+</body>
+
+</html>
